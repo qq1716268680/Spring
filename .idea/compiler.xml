@@ -9,5 +9,9 @@
         <module name="d3" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring.spring-aspects.main" target="1.8" />
+      <module name="spring.spring-aspects.test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
