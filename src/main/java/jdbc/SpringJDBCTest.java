@@ -15,6 +15,7 @@ public class SpringJDBCTest {
         u.setAge(20);
         u.setSex("男");
 
+
 //        login.loginCheck("boy", "123");
         login.save(u);
     }
