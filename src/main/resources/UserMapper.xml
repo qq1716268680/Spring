@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.UserMapper">
+    <!--<select id="selectBlog" resultType="Blog">
+    select * from Blog where id = #{id}
+  </select>-->
+
+    <insert id="insertUser" parameterType="jdbc.User">
+        insert into user (name,age) values (#{name},#{age})
+    </insert>
+
+    <select id="getUser" resultType="jdbc.User" parameterType="java.lang.Integer">
+        select * from user where id = #{id}
+    </select>
+
+</mapper>
